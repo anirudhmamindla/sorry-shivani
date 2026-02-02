@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 30px;
+      border-radius: 20px;
+      width: 320px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 15px 0;
+    }
+
+    button {
+      padding: 10px 22px;
+      margin: 10px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      background: white;
+      color: #ff4f7a;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card" id="content">
+  <h2>Are you angry with me? 🥺</h2>
+
+  <img src="https://drive.google.com/uc?id=1JhY7YE6P3kyjfb95FZ262Vu9yGIUqNrI">
+
+  <button onclick="yesClicked()">Yes</button>
+  <button onclick="noClicked()">No</button>
+</div>
+
+<script>
+  function yesClicked() {
+    document.getElementById("content").innerHTML = `
+      <h2>I'm sorry 🥺</h2>
+      <p>Please accept it <strong>Shivani</strong>!!!<br><br>
+      I love you!!! ❤️</p>
+    `;
+  }
+
+  function noClicked() {
+    document.getElementById("content").innerHTML = `
+      <h2>Very very good!! 😌</h2>
+      <p>I love you!! ❤️<br><br>
+      But I'm sorry again!!!! 🥺</p>
+    `;
+  }
+</script>
+
+</body>
+</html>
